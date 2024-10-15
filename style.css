@@ -1,0 +1,133 @@
+:root{
+    --gris: #D9D9D9
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    background-color: var(--gris);
+    justify-content: space-around;
+    box-shadow:3px 3px 3px var(--gris);
+}
+
+.logos{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+.hep{
+    width: 30%;
+    border-radius: 50px;
+}
+.logos>img{
+    width:30%;
+}
+
+
+
+.barre{
+    text-align: center;
+    padding: 20px;
+}
+.barre>img{
+    width: 4%;
+    height: 4%;
+
+}
+input{
+    outline: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.ecole{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ecole>img{
+    width: 20%;
+}
+.ligne{
+    color: var(--gris);
+    width: 90%;
+    height: .5px;
+}
+
+.section{
+    display: block;
+}
+.avatar{
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+}
+.profils{
+    display: flex ;
+    justify-content: center;
+}
+.profil{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 175px;
+    border-radius:10% 10% 10% 10% / 0% 0% 10% 10% ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.profil-entete{
+    display: flex;
+    justify-content: center;
+    background: var(--gris);
+    border-radius: 10% 10% 10% 10% / 5% 5% 10% 10%;
+}
+.profil-corp{
+    display: flex;
+    justify-content: center;
+}
+.plus{
+    display: flex;
+    justify-content: center;
+    color: var(--gris);
+}
+
+@media screen and (max-width: 500px)  {
+    .logos>img:nth-child(1),
+    .logos>img:nth-child(2),
+    .logos>img:nth-child(3),
+    .logos>img:nth-child(4){
+        display: none;
+    }
+    .responsive{
+        background: var(--gris);
+        border-radius: 10% 10% 10% 10% / 0% 0% 10% 10%;
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    nav{
+        justify-content: center;
+        padding-top:20px ;
+    }
+    .profils{
+          display: block;
+    }
+    .profil{
+        width: 90%;
+        display: flex;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        border-radius:10% 10% 10% 10% / 0% 0% 10% 10% ;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .profil-entete, .profil-corp{
+        padding: 10px;
+    }
+    .avatar{
+        justify-content: center;
+
+    }
+
+
+}

@@ -1,0 +1,30 @@
+:root{
+    --gris: #D9D9D9;
+}
+header{
+    display: block;
+    justify-content: center;
+    background-color: var(--gris);
+    border-radius: 10% 10% 10% 10% / 0% 0% 10% 10%;
+    height: 200px;
+    width: 100%;
+    margin:-5px -5px;
+}
+.entete{
+    display: flex;
+    justify-content: space-between;
+}
+.entete img{
+    width: 10%;
+    height: 30%;
+}
+.profil-photo{
+    display: flex;
+    justify-content: center;
+}
+.profil-photo>img{
+    margin-top: 10px;
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+}
